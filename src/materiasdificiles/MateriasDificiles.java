@@ -26,13 +26,13 @@ public class MateriasDificiles extends MetodosSteve {
        int recorredorMaterias=0;
        int recorredorAlumnos=0;
        int cantidadAlumnos=0;
-       int promedioMateria=0;
+       float promedioMateria=0;
        
        System.out.print ("Ingrese la cantidad de alumnos del curso");
        cantidadAlumnos = tomarInt();
                
        int [][] matrizNueva = new int[4][cantidadAlumnos];
-       //matematicas leguas geo y historia
+       imprimir ("matemáticas - leguas - geografía - historia");
        
         for (recorredorMaterias = 0; recorredorMaterias < 4; recorredorMaterias++) {
             
@@ -45,12 +45,18 @@ public class MateriasDificiles extends MetodosSteve {
             }
             imprimir (" ");
         }
-        
-        for (int i = 0; i < 10; i++) {
-            
+       int sumador=0;
+       int promedio=0;
+       recorredorMaterias=0;
+       
+       for (int contadorNotas = 0; contadorNotas < cantidadAlumnos; contadorNotas++) {
+
+            promedio=(promedio + matrizNueva[recorredorMaterias][contadorNotas]);
         }
+        promedioMateria=promedio/cantidadAlumnos;
+                imprimir ("El promedio de Matemáticas es:" + promedioMateria);
         
-        
+      
     }
     
 }
