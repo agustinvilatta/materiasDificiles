@@ -26,6 +26,7 @@ public class MateriasDificiles extends MetodosSteve {
        int recorredorMaterias=0;
        int recorredorAlumnos=0;
        int cantidadAlumnos=0;
+       int promedioMateria=0;
        
        System.out.print ("Ingrese la cantidad de alumnos del curso");
        cantidadAlumnos = tomarInt();
@@ -42,9 +43,12 @@ public class MateriasDificiles extends MetodosSteve {
                 
                 System.out.print (matrizNueva[recorredorMaterias][recorredorAlumnos]);
             }
-            
+            imprimir (" ");
         }
         
+        for (int i = 0; i < 10; i++) {
+            
+        }
         
         
     }
